@@ -1,0 +1,116 @@
+Index: demo4.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- demo4.go	(date 1524585433000)
++++ demo4.go	(date 1524585433000)
+@@ -0,0 +1,12 @@
++package main
++
++func main() {
++	//const (
++	//	cpp  = 0
++	//	java = 1
++	//	python = 2
++	//	php = 4
++	//)
++	//
++	//fmt.Println(cpp,java,python,php)
++}
+Index: demo8.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- demo8.go	(date 1524674745000)
++++ demo8.go	(date 1524674745000)
+@@ -0,0 +1,16 @@
++package main
++
++import "fmt"
++
++func main() {
++	arr := [...] int{0,1,2,3,4,5,6,7,8,9}
++
++	fmt.Println(arr[2:6])  //2 , 3, 4, 5
++	fmt.Println(arr[:6]) // 0, 1,2,3,4,5
++
++	s1 := arr[2:]
++	fmt.Println(s1) //2,3,4,5,6,7,8,9
++
++	s2 := arr[:]
++	fmt.Println(s2) // 0,1,2,3,4,5,6,7,8,9
++}
+Index: demo5.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- demo5.go	(date 1524585517000)
++++ demo5.go	(date 1524585517000)
+@@ -0,0 +1,15 @@
++package main
++
++import "fmt"
++
++func main() {
++	const (
++		cpp = iota
++		java
++		python
++		php
++		javascript
++	)
++
++	fmt.Println(cpp,javascript,java,python,php)
++}
+Index: demo6.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- demo6.go	(date 1524585765000)
++++ demo6.go	(date 1524585765000)
+@@ -0,0 +1,15 @@
++package main
++
++import "fmt"
++
++func main() {
++	const (
++		cpp = iota
++		_
++		python
++		php
++		javascript
++	)
++
++	fmt.Println(cpp,javascript,python,php)
++}
+Index: demo7.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- demo7.go	(date 1524586050000)
++++ demo7.go	(date 1524586050000)
+@@ -0,0 +1,18 @@
++package main
++
++import "fmt"
++
++func main() {
++
++	//b , kb , mb,gb ,tb,pb
++	const (
++		b = 1 << (10 * iota)
++		kb
++		mb
++		gb
++		tb
++		pb
++	)
++
++	fmt.Println(b , kb , mb,gb ,tb,pb)
++}
